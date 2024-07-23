@@ -30,7 +30,6 @@ def main():
     elif args.list:
         list_documents()
     else:
-        # Default behavior: process all documents in the DATA_PATH
         documents = load_documents(DATA_PATH)
         chunks = split_documents(documents)
         add_to_chroma(chunks)
